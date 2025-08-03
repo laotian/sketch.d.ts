@@ -1,4 +1,4 @@
-import { _Sketch } from "./sketch";
+import {_Sketch} from "./sketch";
 
 declare global {
     /**
@@ -153,6 +153,12 @@ declare global {
     type INPUT_TYPE = _Sketch.INPUT_TYPE;
     /**Enumeration of the animation types. */
     type AnimationType = _Sketch.AnimationType;
+    /** Enumeration of the group behavior types for containers. */
+    type GroupBehavior = _Sketch.GroupBehavior;
+    /** Enumeration of the flex sizing options for layers. */
+    type FlexSizing = _Sketch.FlexSizing;
+    /** Enumeration of the pin options for layers. */
+    type Pin = _Sketch.Pin;
 }
 
 declare const sketchDefault: Sketch;
@@ -229,6 +235,9 @@ export {
     LineJoin,
     INPUT_TYPE,
     AnimationType,
+    GroupBehavior,
+    FlexSizing,
+    Pin
 };
 
 // Definitions below are not exported
